@@ -1,0 +1,286 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+
+
+
+ .offcanvas {
+  width: 100%!important;
+ }
+
+
+/* MAPA */
+
+#map {
+  
+  height: 100%;
+  width: 100%;
+}
+
+.mapboxgl-ctrl a{
+  display: none;
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+
+
+
+/* BOTON-POP */
+
+#boton-pop-futbol {
+  background-image: url("Imagenes/campo-futbol.webp");
+  background-position: bottom center;
+  font-family:fantasy;
+  font-size: 40px;
+  text-shadow: 4px 4px black;
+}
+
+#boton-pop-motor {
+  background-image: url("Imagenes/circuito.jpeg");
+  background-position: bottom center;
+  font-family:fantasy;
+  font-size: 40px;
+  text-shadow: 4px 4px black;
+}
+
+#boton-pop-tenis {
+  background-image: url("Imagenes/pista-tenis.jpg");
+  background-position: center left;
+  font-family:fantasy;
+  font-size: 40px;
+  text-shadow: 4px 4px black;
+}
+
+.boton-deporte {
+  margin-top: 20px;
+}
+
+#offcanvasWithBothOptions {
+  top: 0;
+  text-align: right;
+}
+
+.offcanvas-body button {
+  width: 100%;
+  height: 20%;
+}
+
+
+/* BOTON FILTRO DEPORTE */
+
+.botones-filtro {
+  width: 40%;
+  position: absolute!important;
+  top: 0;
+  left: 30%;
+}
+
+.botones-filtro img {
+  width: 45px;
+}
+
+/* FILTRO */
+
+#filtro {
+
+  width: 40%;
+  position: absolute;
+  top: 40px;
+  left: 30%;
+
+}
+
+.equipos {
+  justify-content: center;
+}
+
+.escudo-nombre {
+  min-width: 150px!important;
+  max-width: 150px!important;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+#canvas-futbol-equipos {
+  text-align: center;
+}
+
+#canvas-futbol-equipos-2 {
+  text-align: center;
+}
+
+#canvas-futbol-equipos input {
+  width: 100px;
+  margin: 0;
+}
+
+#canvas-futbol-equipos-2 input {
+  width: 100px;
+  margin: 0;
+}
+
+.circuito {
+  display: flex;
+}
+
+.nombre-circuito {
+  margin: 5px;
+}
+
+.categoria-nombre {
+  text-align: center;
+}
+
+.categoria {
+  width: 50%;
+  margin: 10px;
+}
+
+.circuito img{
+  width: 100px;
+  margin: 5px;
+}
+
+#div-boton-filtro {
+  text-align: center;
+}
+
+#boton-filtro {
+  font-size: 20px;
+  padding: 10px 30px 10px 30px;
+}
+
+#contenido-filtro {
+  padding: 5px;
+}
+
+
+/* POPUP DEL MAPA */
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.offcanvas-bottom {
+  height: 40%!important;
+}
+
+/* FICHAS BAR */
+
+#ficha-bar {
+  position: absolute;
+  bottom: 80px;
+  left: 10%;
+  width: 80%;
+  height: 80px;
+  background-color: white;
+  border: 0px;
+  border-top: 5px;
+  border-color: #F9BD33;
+  border-style: solid;
+}
+
+.col-bar {
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.botones-ficha {
+  border-radius: 0!important;
+  margin: auto;
+}
+
+#div-entradas {
+  text-align: center;
+}
+
+.entradas {
+
+  width: 50%;
+  margin: 5px;
+}
+
+
+
+/* BOTON VISTA AMPLIADA */
+
+#botones-ampliada {
+  position: absolute;
+  bottom: 180px;
+  left: 13%;
+  width: 80%;
+  height: 30px;
+  background: linear-gradient(to top, rgb(220, 220, 255), white);
+  text-align: center;
+  border-radius: 50px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#boton-pop {
+  border-color: black;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+}
+
+@media (max-width: 330px) {
+
+  .botones-ficha {
+    font-size: 14px!important;
+  }
+
+  #botones-ampliada p {
+    font-size: 10px!important;
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 570px) {
+
+  #botones-ampliada p {
+    font-size: 20px!important;
+    margin: auto;
+  }
+
+  #ficha-bar {
+    position: absolute;
+    bottom: 80px;
+    left: 25%;
+    width: 50%;
+    height: 80px;
+    background-color: white;
+    border: 0px;
+    border-top: 5px;
+    border-color: #F9BD33;
+    border-style: solid;
+  }
+
+  .col-bar {
+    width: 50%!important;
+  }
+
+}
+
+
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  background: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+icon{
+	width: 20%;
+	height: 20%;
+}
